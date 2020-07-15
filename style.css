@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {background-color: #e4e4e4;}
+
+* {
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    outline: none;
+}
+
+#equation, #result {
+    background-color: rgb(51, 164, 184);
+    font-weight: bold;
+    overflow: auto;
+}
+
+#calcContainer {
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+#expressions * {
+    margin: 3px;
+    transition: all 0.25s;
+    font-size: 20px;
+}
+#expressions *:hover {
+    padding:25px;
+    border: 5px solid black;
+}
+#equation {width: 90%}
+#result {background-color: #4f854f}

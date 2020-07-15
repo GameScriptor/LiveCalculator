@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LiveCalculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+    <script data-ad-client="ca-pub-8417601257550128" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <body>
+    <div id="calcContainer">
+        <h3 style="padding: 5px">Equation:</h3>
+        <input id="equation" oninput="evaluateEquation()" placholder="This is the equation area. You can write here" autofocus>
+        <div id="expressions">
+            <button onclick="del()" style="color: red">⌫</button>
+            <button onclick="equation.value=''">c</button>
+            <button onclick="addOperation(this)">π</button>
+            <button onclick="addOperation(this)">(</button>            
+            <button onclick="addOperation(this)">)</button>            
+            <button onclick="addOperation(this)">✖</button>            
+            <button onclick="addOperation(this)">+</button>
+            <button onclick="addOperation(this)">-</button>
+            <button onclick="addOperation(this)">÷</button>
+            <button onclick="addOperation(this)">0</button>
+            <button onclick="addOperation(this)">1</button>
+            <button onclick="addOperation(this)">2</button>
+            <button onclick="addOperation(this)">3</button>
+            <button onclick="addOperation(this)">4</button>
+            <button onclick="addOperation(this)">5</button>
+            <button onclick="addOperation(this)">6</button>
+            <button onclick="addOperation(this)">7</button>
+            <button onclick="addOperation(this)">8</button>
+            <button onclick="addOperation(this)">9</button>
+        </div>
+        <p id="result">Result: </p>
+    </div>      
+    <script src="script.js"></script>
+  </body>
+</html>
